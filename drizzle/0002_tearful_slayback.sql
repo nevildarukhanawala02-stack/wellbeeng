@@ -1,0 +1,1 @@
+ALTER TABLE `leads` MODIFY COLUMN `leadMagnetType` varchar(100) NOT NULL DEFAULT 'ceo-intel-alerts-guide';
