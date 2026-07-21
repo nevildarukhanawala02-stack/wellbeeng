@@ -3,7 +3,7 @@ import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
-import { createLead } from "./db";
+import { createLead, getAllLeads } from "./db";
 import { sendEmail, generateLeadMagnetEmailTemplate, generateAdminNotificationTemplate } from "./_core/email";
 
 export const appRouter = router({
