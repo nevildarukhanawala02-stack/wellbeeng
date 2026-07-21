@@ -55,7 +55,7 @@ export const appRouter = router({
           // Send email with guide link
           const protocol = ctx.req.protocol || "https";
           const host = ctx.req.get("host") || "wellbeeng.com";
-          const guideUrl = `${protocol}://${host}/manus-storage/CEO_Intel_Alerts_Guide_Cleaned_Final_464b070e.pdf`;
+          const guideUrl = `${protocol}://${host}/resources/CEO_Intel_Alerts_Guide_Cleaned_Final_464b070e.pdf`;
           const consultationUrl = `${protocol}://${host}/consultation`;
           const emailTemplate = generateLeadMagnetEmailTemplate(
             input.name,

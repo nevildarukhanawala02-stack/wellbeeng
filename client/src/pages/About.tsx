@@ -33,7 +33,7 @@ export default function About() {
               {/* LEFT - PHOTO */}
               <div>
                 <div className="rounded-lg overflow-hidden h-96 mb-6">
-                  <img src="/manus-storage/rajesh_sharma_professional_467339ed_661d89b4.png" alt="Rajesh Kaushal" className="w-full h-full object-cover" />
+                  <img src="/images/rajesh_sharma_professional_467339ed_661d89b4.webp" alt="Rajesh Kaushal" className="w-full h-full object-cover" />
                 </div>
                 
                 {/* STATS CARDS */}
@@ -199,7 +199,7 @@ export default function About() {
               {/* LEFT - PHOTO */}
               <div>
                 <div className="rounded-lg overflow-hidden h-96 mb-6">
-                  <img src="/manus-storage/nevil-founder-professional_aff52c05_497e6ba0.webp" alt="Nevil Darukhanawala" className="w-full h-full object-cover" />
+                  <img src="/images/nevil-founder-professional_aff52c05_497e6ba0.webp" alt="Nevil Darukhanawala" className="w-full h-full object-cover" />
                 </div>
               </div>
 

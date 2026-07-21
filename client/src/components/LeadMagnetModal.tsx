@@ -291,7 +291,7 @@ export function LeadMagnetModal({
               We've sent the guide to your email. Check your inbox for the CEO Intel Alerts Guide and insights on early-warning alerts.
             </p>
             <a
-              href="/manus-storage/CEO_Intel_Alerts_Guide_Cleaned_Final_464b070e.pdf"
+              href="/resources/CEO_Intel_Alerts_Guide_Cleaned_Final_464b070e.pdf"
               download="CEO_Intel_Alerts_Guide.pdf"
               className="mt-4 inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-2 rounded-lg transition-colors"
             >
