@@ -40,3 +40,20 @@ export const leads = mysqlTable("leads", {
 
 export type Lead = typeof leads.$inferSelect;
 export type InsertLead = typeof leads.$inferInsert;
+
+// Consultations table for storing "Book Your Consultation" form submissions
+export const consultations = mysqlTable("consultations", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  email: varchar("email", { length: 320 }).notNull(),
+  company: varchar("company", { length: 255 }),
+  revenue: varchar("revenue", { length: 100 }),
+  industry: varchar("industry", { length: 100 }),
+  focus: varchar("focus", { length: 100 }),
+  message: text("message"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Consultation = typeof consultations.$inferSelect;
+export type InsertConsultation = typeof consultations.$inferInsert;

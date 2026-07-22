@@ -397,3 +397,65 @@ export function generateAdminNotificationTemplate(leadData: {
     </html>
   `;
 }
+
+export function generateConsultationNotificationTemplate(data: {
+  name: string;
+  email: string;
+  company?: string;
+  revenue?: string;
+  industry?: string;
+  focus?: string;
+  message?: string;
+}): string {
+  return `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9fafb;
+          }
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          .detail-row { margin: 8px 0; }
+          .label { font-weight: 600; color: #111827; }
+          .message-box {
+            background-color: #f3f4f6;
+            border-left: 4px solid #f97316;
+            padding: 12px 16px;
+            margin-top: 16px;
+            white-space: pre-wrap;
+          }
+          .footer { margin-top: 24px; font-size: 12px; color: #6b7280; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h2>New Consultation Booking Request</h2>
+          <div class="detail-row"><span class="label">Name:</span> ${data.name}</div>
+          <div class="detail-row"><span class="label">Email:</span> ${data.email}</div>
+          ${data.company ? `<div class="detail-row"><span class="label">Company:</span> ${data.company}</div>` : ""}
+          ${data.revenue ? `<div class="detail-row"><span class="label">Revenue Range:</span> ${data.revenue}</div>` : ""}
+          ${data.industry ? `<div class="detail-row"><span class="label">Industry:</span> ${data.industry}</div>` : ""}
+          ${data.focus ? `<div class="detail-row"><span class="label">Interested In:</span> ${data.focus}</div>` : ""}
+          ${data.message ? `<div class="message-box">${data.message}</div>` : ""}
+          <div class="footer">
+            <p>Submitted at: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</p>
+            <p>&copy; 2026 Wellbeeng Technologies. All rights reserved.</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `;
+}

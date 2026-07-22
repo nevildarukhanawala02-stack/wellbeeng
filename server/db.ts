@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, InsertLead, leads } from "../drizzle/schema";
+import { InsertUser, users, InsertLead, leads, InsertConsultation, consultations } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -121,3 +121,34 @@ export async function getAllLeads() {
 }
 
 // TODO: add feature queries here as your schema grows.
+
+export async function createConsultation(consultation: InsertConsultation): Promise<void> {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot create consultation: database not available");
+    return;
+  }
+
+  try {
+    await db.insert(consultations).values(consultation);
+  } catch (error) {
+    console.error("[Database] Failed to create consultation:", error);
+    throw error;
+  }
+}
+
+export async function getAllConsultations() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get consultations: database not available");
+    return [];
+  }
+
+  try {
+    const result = await db.select().from(consultations).orderBy(consultations.createdAt);
+    return result;
+  } catch (error) {
+    console.error("[Database] Failed to get consultations:", error);
+    throw error;
+  }
+}

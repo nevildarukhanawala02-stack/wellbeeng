@@ -3,8 +3,8 @@ import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
-import { createLead, getAllLeads } from "./db";
-import { sendEmail, generateLeadMagnetEmailTemplate, generateAdminNotificationTemplate } from "./_core/email";
+import { createLead, getAllLeads, createConsultation, getAllConsultations } from "./db";
+import { sendEmail, generateLeadMagnetEmailTemplate, generateAdminNotificationTemplate, generateConsultationNotificationTemplate } from "./_core/email";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -100,6 +100,64 @@ export const appRouter = router({
         } catch (error) {
           console.error("[API] Failed to submit lead:", error);
           throw new Error("Failed to submit lead. Please try again.");
+        }
+      }),
+  }),
+
+  consultations: router({
+    getAll: publicProcedure
+      .query(async () => {
+        try {
+          return await getAllConsultations();
+        } catch (error) {
+          console.error("[API] Failed to fetch consultations:", error);
+          throw new Error("Failed to fetch consultations");
+        }
+      }),
+    submit: publicProcedure
+      .input(
+        z.object({
+          name: z.string().min(2, "Name must be at least 2 characters"),
+          email: z.string().email("Invalid email address"),
+          company: z.string().optional(),
+          revenue: z.string().optional(),
+          industry: z.string().optional(),
+          focus: z.string().optional(),
+          message: z.string().optional(),
+        })
+      )
+      .mutation(async ({ input }) => {
+        try {
+          await createConsultation({
+            name: input.name,
+            email: input.email,
+            company: input.company,
+            revenue: input.revenue,
+            industry: input.industry,
+            focus: input.focus,
+            message: input.message,
+          });
+
+          const notificationTemplate = generateConsultationNotificationTemplate(input);
+          const emailSent = await sendEmail({
+            to: "rajesh@wellbeeng.com",
+            subject: `New Consultation Request: ${input.name}${input.company ? ` from ${input.company}` : ""}`,
+            html: notificationTemplate,
+          });
+
+          if (!emailSent) {
+            console.warn("[API] Consultation notification email failed to send");
+            // Don't throw - the consultation was still saved successfully
+          }
+
+          return {
+            success: true,
+            message: "Consultation request submitted successfully",
+            emailSent,
+          };
+        } catch (error) {
+          console.error("[API] Failed to submit consultation:", error);
+          throw new Error("Failed to submit consultation request. Please try again.");
         }
       }),
   }),

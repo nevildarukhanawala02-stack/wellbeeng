@@ -3,6 +3,7 @@ import { Link } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { CheckCircle, ArrowRight } from 'lucide-react';
+import { trpc } from '@/lib/trpc';
 
 export default function Consultation() {
   const [formData, setFormData] = useState({
@@ -14,20 +15,31 @@ export default function Consultation() {
     focus: 'revenue',
     message: ''
   });
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const submitConsultationMutation = trpc.consultations.submit.useMutation();
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Consultation booked:', formData);
-    alert('Thank you! We\'ll contact you within 24 hours to confirm your consultation.');
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      revenue: '',
-      industry: '',
-      focus: 'revenue',
-      message: ''
-    });
+    setSubmitError(null);
+
+    try {
+      await submitConsultationMutation.mutateAsync(formData);
+      setSubmitted(true);
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        revenue: '',
+        industry: '',
+        focus: 'revenue',
+        message: ''
+      });
+    } catch (error) {
+      console.error('[Consultation] Submission failed:', error);
+      setSubmitError('Something went wrong submitting your request. Please try again, or email us directly.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -227,11 +239,24 @@ export default function Consultation() {
                       />
                     </div>
 
+                    {submitted && (
+                      <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4 text-green-400 text-sm">
+                        Thank you! Your consultation request has been received. We'll contact you within 24 hours to confirm your time.
+                      </div>
+                    )}
+
+                    {submitError && (
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4 text-red-400 text-sm">
+                        {submitError}
+                      </div>
+                    )}
+
                     <button
                       type="submit"
-                      className="w-full bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center gap-2"
+                      disabled={submitConsultationMutation.isPending}
+                      className="w-full bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Book Your Consultation
+                      {submitConsultationMutation.isPending ? "Submitting..." : "Book Your Consultation"}
                       <ArrowRight size={20} />
                     </button>
 
