@@ -13,7 +13,8 @@ export default function Consultation() {
     revenue: '',
     industry: '',
     focus: 'revenue',
-    message: ''
+    message: '',
+    website: '' // honeypot: real users never see/fill this; bots often do
   });
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
@@ -34,7 +35,8 @@ export default function Consultation() {
         revenue: '',
         industry: '',
         focus: 'revenue',
-        message: ''
+        message: '',
+        website: ''
       });
     } catch (error) {
       console.error('[Consultation] Submission failed:', error);
@@ -110,6 +112,25 @@ export default function Consultation() {
               <div className="md:col-span-2">
                 <div className="bg-blue-800/30 rounded-lg p-8 border border-cyan-400/20">
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Honeypot field — hidden from real users via off-screen
+                        positioning (not display:none, which some bots detect
+                        and skip). Left name/id look legitimate to lure bots. */}
+                    <div
+                      aria-hidden="true"
+                      style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, width: 0, overflow: 'hidden' }}
+                    >
+                      <label htmlFor="website">Website</label>
+                      <input
+                        type="text"
+                        id="website"
+                        name="website"
+                        value={formData.website}
+                        onChange={handleChange}
+                        tabIndex={-1}
+                        autoComplete="off"
+                      />
+                    </div>
+
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">

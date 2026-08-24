@@ -39,9 +39,17 @@ export const appRouter = router({
           email: z.string().email("Invalid email address"),
           companyName: z.string().min(1, "Company name is required"),
           designation: z.string().min(1, "Designation is required"),
+          // Honeypot: hidden field, must stay empty. Bots that auto-fill every
+          // input will trip this; real users never see or fill it.
+          website: z.string().max(0).optional().or(z.literal("")),
         })
       )
       .mutation(async ({ input, ctx }) => {
+        // Silently pretend success so bots don't learn the honeypot was hit.
+        if (input.website) {
+          console.warn("[API] Honeypot triggered on leads.submit, dropping silently");
+          return { success: true, message: "Lead submitted successfully", emailSent: true };
+        }
         try {
           await createLead({
             name: input.name,
@@ -124,9 +132,17 @@ export const appRouter = router({
           industry: z.string().optional(),
           focus: z.string().optional(),
           message: z.string().optional(),
+          // Honeypot: hidden field, must stay empty. Bots that auto-fill every
+          // input will trip this; real users never see or fill it.
+          website: z.string().max(0).optional().or(z.literal("")),
         })
       )
       .mutation(async ({ input }) => {
+        // Silently pretend success so bots don't learn the honeypot was hit.
+        if (input.website) {
+          console.warn("[API] Honeypot triggered on consultations.submit, dropping silently");
+          return { success: true, message: "Consultation request submitted successfully", emailSent: true };
+        }
         try {
           await createConsultation({
             name: input.name,

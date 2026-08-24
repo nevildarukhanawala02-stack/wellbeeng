@@ -25,6 +25,7 @@ export function LeadMagnetModal({
     email: '',
     companyName: '',
     designation: '',
+    website: '', // honeypot: real users never see/fill this; bots often do
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -89,6 +90,7 @@ export function LeadMagnetModal({
         email: formData.email,
         companyName: formData.companyName,
         designation: formData.designation,
+        website: formData.website,
       });
 
       setShowSuccess(true);
@@ -98,6 +100,7 @@ export function LeadMagnetModal({
         email: '',
         companyName: '',
         designation: '',
+        website: '',
       });
 
       // Auto-close after 3 seconds
@@ -132,6 +135,24 @@ export function LeadMagnetModal({
 
         {!showSuccess ? (
           <form onSubmit={handleSubmit} className="space-y-4 mt-6">
+            {/* Honeypot field — hidden from real users via off-screen
+                positioning (not display:none, which some bots detect and
+                skip). Left name/id look legitimate to lure bots. */}
+            <div
+              aria-hidden="true"
+              style={{ position: 'absolute', left: '-9999px', top: '-9999px', height: 0, width: 0, overflow: 'hidden' }}
+            >
+              <Label htmlFor="website">Website</Label>
+              <Input
+                id="website"
+                name="website"
+                value={formData.website}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
+
             {/* Name Field */}
             <div className="space-y-2">
               <Label htmlFor="name" className="text-white">
