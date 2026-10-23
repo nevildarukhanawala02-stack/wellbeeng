@@ -19,7 +19,7 @@ export default function MarketDetail() {
           {/* Market Illustration Background */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/QdNM7CcwKdsrUtitkXPdkz-img-3_1771760204000_na1fn_d2VsbGJlZW5nLW1hcmtldC1pbnRlbGxpZ2VuY2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L1FkTk03Q2N3S2RzclV0aXRrWFBka3otaW1nLTNfMTc3MTc2MDIwNDAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MVzFoY210bGRDMXBiblJsYkd4cFoyVnVZMlUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=uPwuBCzJ8bsSzHbINAIUhJTFOvXvjDYnVOwaf9Fsv0VxAkEYHHGw~wKiqaNeFp9IrbX7zScmqRCZK~sZty9JJBLzO23Gmx6zdzKE-nYfr-ZjXLbbkJJjq2e3JtKID287Q4r5gid2zas7UHEwaBhTWx5vLKmwjVWQh7JFbMpTupWHyB9DDc7YbvpHez20RsWo7BxoX9L7h-LWsR4xKkzQQ8ERFEtu3lC3bLq~UEiV~I8ixPevk077lwAwOianpXTolGprnN6DnK-A0MG-TeIl34M3m4p1tfr2HEGqfRjFM7cWaYDO3q0L1my2mo4rY6ip6w7fzEpxxUeNRnW-01XvxA__"
+              src="/images/wellbeeng-market-intelligence.webp"
               alt="Market & Competitive Intelligence"
               className="w-full h-full object-cover"
             />

@@ -19,7 +19,7 @@ export default function Home() {
           {/* Hero Brain Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/OuZQWqQ4Z7I6eYTEZy7i6l-img-1_1771761305000_na1fn_d2VsbGJlZW5nLWhlcm8tYnJhaW4tdjI.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L091WlFXcVE0WjdJNmVZVEVaeTdpNmwtaW1nLTFfMTc3MTc2MTMwNTAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MV2hsY204dFluSmhhVzR0ZGpJLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=pUJGNo133GznUfz8AFl-4QX6klWphfx2koIoZ6LQRtDGTiv~tkL2QY5COnG6DSMLcX6SBCdT4zz~p4NslexJfh7OBf7aQ9yYBXekOqcGkR8c4Bkii9v39hxgLWHnHm32IxZZNQ~qnPoJOkn~AiZ4klLxLVu7JID-i5fq-0Vaj1~8zu9PW58RwjMcHuzA9R6nV-6wGk3EZ4VtcfSo7sgTPMhRCedE7tMNDk4dV6vdzbJautixFw8ZJAQAo-jInCEI8HSVlcFkmePlGifz07offtC5PT-udmyGKa4O4K~a3Wa~d0wJOtl9Q8EXal9STzgEh1swBxmBzDAzMVlV~lbR8g__"
+              src="/images/wellbeeng-hero-brain.webp"
               alt="AI Brain Illustration"
               className="w-full h-full object-cover"
             />
@@ -234,7 +234,7 @@ export default function Home() {
           {/* Circuit Pattern Background */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/y8X7PS2QUL0Zi4X3FOtnjP-img-1_1771760146000_na1fn_d2VsbGJlZW5nLWNpcmN1aXQtcGF0dGVybg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L3k4WDdQUzJRVUwwWmk0WDNGT3RualAtaW1nLTFfMTc3MTc2MDE0NjAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MV05wY21OMWFYUXRjR0YwZEdWeWJnLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Uxaqd-5IEFTBJSMgNNCSWaq~jFHVkWeLN39IxlQvUoPr4WJmgQc~CPMPQM9NqlmoLUPS~e56C81ayGYuhDIAv-DUXLTsr-yNmIq7aW6EPWJNWjI~s4tQa9-KKjLSukUQOw5dkEx98NOqyU3~c5EhQbMHhxo9kESGqm4Rs3s3FY-UbcjDbICk4pM570soKvANaagLQeUvxRss3v9-0NV8LpoNy6pqtomG5phoCilQCJ-d2e7uSLxYMPXXQ3NMK~HVdmVHiGs2zHOu6F~S24Ai7gDuWoMUwG4-ioBwl4XVS2zkiLTwS3tKz9GPw8TUc-HjReYt7RafMobhm4PpkbBgJQ__"
+              src="/images/wellbeeng-circuit-pattern.webp"
               alt="Circuit Pattern"
               className="w-full h-full object-cover"
             />
@@ -412,7 +412,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-blue-800/40 to-cyan-800/20 rounded-lg overflow-hidden border border-cyan-400/20 hover:border-cyan-400/50 transition-all hover:shadow-lg hover:shadow-cyan-400/20">
                     <div className="aspect-square overflow-hidden bg-slate-900 relative">
                       <img
-                        src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/QdNM7CcwKdsrUtitkXPdkz-img-1_1771760197000_na1fn_d2VsbGJlZW5nLXJldmVudWUtaW50ZWxsaWdlbmNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L1FkTk03Q2N3S2RzclV0aXRrWFBka3otaW1nLTFfMTc3MTc2MDE5NzAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MWEpsZG1WdWRXVXRhVzUwWld4c2FXZGxibU5sLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=RE3AvMOMGYRZUEfhnI7LBzltBfiTlwRBNyvxbtuPBIzXiv0MGkV2hyP5iMU1i6AGFsG-s6~6bOkEtT6ndHLEYa8MGJd1cuEqF1dAhjA~KvocvMvlF6~4TETlKRJ6zKJBNxs1~Seq36C5KjzWbC~rF7EPDlVWJyrRHB0~kXaUPHtlfCuw9vddUHwbfHKL9WMUgYuSdHHl~dGdlJNH6H62jcLX4vfyaGPvzS4bYdpE3Gurkd2bc~VQ3R43LAaazizJy~aPG6arBlhzK07VqMr6eZSOf9a9CRM8dLW4MiHpvfkaChvQskg23dtXmU3dod4Tb6f1LirO-WxBvTbuGW59sw__"
+                        src="/images/wellbeeng-revenue-intelligence.webp"
                         alt="Revenue Intelligence"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -436,7 +436,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-blue-800/40 to-cyan-800/20 rounded-lg overflow-hidden border border-cyan-400/20 hover:border-cyan-400/50 transition-all hover:shadow-lg hover:shadow-cyan-400/20">
                     <div className="aspect-square overflow-hidden bg-slate-900 relative">
                       <img
-                        src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/QdNM7CcwKdsrUtitkXPdkz-img-2_1771760201000_na1fn_d2VsbGJlZW5nLW9wZXJhdGlvbnMtaW50ZWxsaWdlbmNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L1FkTk03Q2N3S2RzclV0aXRrWFBka3otaW1nLTJfMTc3MTc2MDIwMTAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MVzl3WlhKaGRHbHZibk10YVc1MFpXeHNhV2RsYm1ObC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=eNoZZgS9RlXtrFk-2yVBSKyhINUM-O-WT91nOt2udYXwLKeq5kGJQLF8BHRsRLjzDvVViydgxnBl-4kKUWdh1v2zuK72ycKuRxlg9oi4dfVn3tSlU~OShDsfRRo1MBkmFqataNshB~PPh1IBYYu44~-5Ek6-mT-0Z3AhLYkE4r1dpeSG~jAvtAfVgCgV9bTQCk1sPf5dFo4mk4cOSF23mCT2SFgH1FopJP0xLkahjxQM9fYMcJ4ZzO0OZs8sfVTyq~AlIcnyT~OAzmHu-jyVDLrrLXWEC30yf0Tmvn7wy-5uVdnM~5mEszNFkivYoHerIG1qYLgf8qgk6GpyYtY8Sw__"
+                        src="/images/wellbeeng-operations-intelligence.webp"
                         alt="Operational Excellence"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -460,7 +460,7 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-blue-800/40 to-cyan-800/20 rounded-lg overflow-hidden border border-cyan-400/20 hover:border-cyan-400/50 transition-all hover:shadow-lg hover:shadow-cyan-400/20">
                     <div className="aspect-square overflow-hidden bg-slate-900 relative">
                       <img
-                        src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/QdNM7CcwKdsrUtitkXPdkz-img-3_1771760204000_na1fn_d2VsbGJlZW5nLW1hcmtldC1pbnRlbGxpZ2VuY2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L1FkTk03Q2N3S2RzclV0aXRrWFBka3otaW1nLTNfMTc3MTc2MDIwNDAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MVzFoY210bGRDMXBiblJsYkd4cFoyVnVZMlUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=uPwuBCzJ8bsSzHbINAIUhJTFOvXvjDYnVOwaf9Fsv0VxAkEYHHGw~wKiqaNeFp9IrbX7zScmqRCZK~sZty9JJBLzO23Gmx6zdzKE-nYfr-ZjXLbbkJJjq2e3JtKID287Q4r5gid2zas7UHEwaBhTWx5vLKmwjVWQh7JFbMpTupWHyB9DDc7YbvpHez20RsWo7BxoX9L7h-LWsR4xKkzQQ8ERFEtu3lC3bLq~UEiV~I8ixPevk077lwAwOianpXTolGprnN6DnK-A0MG-TeIl34M3m4p1tfr2HEGqfRjFM7cWaYDO3q0L1my2mo4rY6ip6w7fzEpxxUeNRnW-01XvxA__"
+                        src="/images/wellbeeng-market-intelligence.webp"
                         alt="Market & Competitive Intelligence"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />

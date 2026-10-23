@@ -19,7 +19,7 @@ export default function OperationsDetail() {
           {/* Operations Illustration Background */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/QdNM7CcwKdsrUtitkXPdkz-img-2_1771760201000_na1fn_d2VsbGJlZW5nLW9wZXJhdGlvbnMtaW50ZWxsaWdlbmNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L1FkTk03Q2N3S2RzclV0aXRrWFBka3otaW1nLTJfMTc3MTc2MDIwMTAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MVzl3WlhKaGRHbHZibk10YVc1MFpXeHNhV2RsYm1ObC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=eNoZZgS9RlXtrFk-2yVBSKyhINUM-O-WT91nOt2udYXwLKeq5kGJQLF8BHRsRLjzDvVViydgxnBl-4kKUWdh1v2zuK72ycKuRxlg9oi4dfVn3tSlU~OShDsfRRo1MBkmFqataNshB~PPh1IBYYu44~-5Ek6-mT-0Z3AhLYkE4r1dpeSG~jAvtAfVgCgV9bTQCk1sPf5dFo4mk4cOSF23mCT2SFgH1FopJP0xLkahjxQM9fYMcJ4ZzO0OZs8sfVTyq~AlIcnyT~OAzmHu-jyVDLrrLXWEC30yf0Tmvn7wy-5uVdnM~5mEszNFkivYoHerIG1qYLgf8qgk6GpyYtY8Sw__"
+              src="/images/wellbeeng-operations-intelligence.webp"
               alt="Operational Excellence"
               className="w-full h-full object-cover"
             />

@@ -19,7 +19,7 @@ export default function RevenueDetail() {
           {/* Revenue Illustration Background */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/f3NHbzkH13pD9rRXYaG9yX/sandbox/QdNM7CcwKdsrUtitkXPdkz-img-1_1771760197000_na1fn_d2VsbGJlZW5nLXJldmVudWUtaW50ZWxsaWdlbmNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZjNOSGJ6a0gxM3BEOXJSWFlhRzl5WC9zYW5kYm94L1FkTk03Q2N3S2RzclV0aXRrWFBka3otaW1nLTFfMTc3MTc2MDE5NzAwMF9uYTFmbl9kMlZzYkdKbFpXNW5MWEpsZG1WdWRXVXRhVzUwWld4c2FXZGxibU5sLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=RE3AvMOMGYRZUEfhnI7LBzltBfiTlwRBNyvxbtuPBIzXiv0MGkV2hyP5iMU1i6AGFsG-s6~6bOkEtT6ndHLEYa8MGJd1cuEqF1dAhjA~KvocvMvlF6~4TETlKRJ6zKJBNxs1~Seq36C5KjzWbC~rF7EPDlVWJyrRHB0~kXaUPHtlfCuw9vddUHwbfHKL9WMUgYuSdHHl~dGdlJNH6H62jcLX4vfyaGPvzS4bYdpE3Gurkd2bc~VQ3R43LAaazizJy~aPG6arBlhzK07VqMr6eZSOf9a9CRM8dLW4MiHpvfkaChvQskg23dtXmU3dod4Tb6f1LirO-WxBvTbuGW59sw__"
+              src="/images/wellbeeng-revenue-intelligence.webp"
               alt="Revenue Intelligence"
               className="w-full h-full object-cover"
             />
