@@ -687,6 +687,12 @@ export default function CEOSherpa() {
                 </p>
               </div>
             </div>
+
+            <p className="sh-note" style={{ marginTop: 28, maxWidth: 700 }}>
+              We have built websites and apps, run a social media company and an agency that ran advertising for 100+
+              brands, and operated a D2C brand of our own. The same framework also runs a ₹200 crore+ manufacturing
+              company, in a different industry.
+            </p>
           </div>
         </section>
 
