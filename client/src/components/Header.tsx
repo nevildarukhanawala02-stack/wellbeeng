@@ -50,9 +50,16 @@ export default function Header() {
                 </Link>
                 {/* CEO Intel */}
                 <Link href="/intelligence-systems">
-                  <a className="block px-4 py-4 text-gray-300 hover:text-white last:rounded-b-lg hover:bg-blue-700 transition-colors border-l-4 border-slate-600" onClick={handleNavClick}>
+                  <a className="block px-4 py-4 text-gray-300 hover:text-white hover:bg-blue-700 transition-colors border-l-4 border-slate-600" onClick={handleNavClick}>
                     <div className="font-semibold text-white">CEO Intel</div>
                     <div className="text-sm text-gray-400">Revenue, Operations & Market Intelligence</div>
+                  </a>
+                </Link>
+                {/* CEO Sherpa */}
+                <Link href="/ceo-sherpa">
+                  <a className="block px-4 py-4 text-gray-300 hover:text-white last:rounded-b-lg hover:bg-blue-700 transition-colors border-l-4 border-emerald-500" onClick={handleNavClick}>
+                    <div className="font-semibold text-white">CEO Sherpa</div>
+                    <div className="text-sm text-gray-400">A ranked daily brief from your own data</div>
                   </a>
                 </Link>
               </div>
@@ -144,6 +151,11 @@ export default function Header() {
               <Link href="/intelligence-systems">
                 <a className="block px-4 py-2 text-gray-300 hover:text-cyan-400 rounded hover:bg-blue-800 transition-colors ml-2" onClick={handleNavClick}>
                   CEO Intel
+                </a>
+              </Link>
+              <Link href="/ceo-sherpa">
+                <a className="block px-4 py-2 text-gray-300 hover:text-cyan-400 rounded hover:bg-blue-800 transition-colors ml-2" onClick={handleNavClick}>
+                  CEO Sherpa
                 </a>
               </Link>
             </div>

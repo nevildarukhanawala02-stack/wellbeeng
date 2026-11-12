@@ -17,6 +17,7 @@ export default function Footer() {
               <li><Link href="/ai-automation"><a className="text-gray-400 hover:text-cyan-400 transition-colors" onClick={handleNavClick}>AI Automation</a></Link></li>
               <li><Link href="/smart-commerce"><a className="text-gray-400 hover:text-cyan-400 transition-colors" onClick={handleNavClick}>Smart Commerce</a></Link></li>
               <li><Link href="/intelligence-systems"><a className="text-gray-400 hover:text-cyan-400 transition-colors" onClick={handleNavClick}>CEO Intel</a></Link></li>
+              <li><Link href="/ceo-sherpa"><a className="text-gray-400 hover:text-cyan-400 transition-colors" onClick={handleNavClick}>CEO Sherpa</a></Link></li>
               <li><Link href="/how-it-works"><a className="text-gray-400 hover:text-cyan-400 transition-colors" onClick={handleNavClick}>How It Works</a></Link></li>
             </ul>
           </div>

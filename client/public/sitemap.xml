@@ -86,6 +86,12 @@
 
   <!-- CEO Intel -->
   <url>
+    <loc>https://wellbeeng.com/ceo-sherpa</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wellbeeng.com/intelligence-systems</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>

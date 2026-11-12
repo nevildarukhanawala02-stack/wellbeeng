@@ -29,6 +29,7 @@ import AIAutomationAgents from "./pages/AIAutomationAgents";
 import AIAutomationCatalogue from "./pages/AIAutomationCatalogue";
 import AIAutomationIntegrations from "./pages/AIAutomationIntegrations";
 import SmartCommerce from "./pages/SmartCommerce";
+import CEOSherpa from "./pages/CEOSherpa";
 import SmartCommerceHowItWorks from "./pages/SmartCommerceHowItWorks";
 import CaseStudies from "./pages/CaseStudies";
 import CaseStudyManufacturing from "./pages/CaseStudyManufacturing";
@@ -69,6 +70,8 @@ function Router() {
       {/* Smart Commerce Routes */}
       <Route path={"/smart-commerce"} component={SmartCommerce} />
       <Route path={"/smart-commerce/how-it-works"} component={SmartCommerceHowItWorks} />
+      {/* CEO Sherpa */}
+      <Route path={"/ceo-sherpa"} component={CEOSherpa} />
       {/* Case Studies Routes */}
       <Route path={"/case-studies"} component={CaseStudies} />
       <Route path={"/case-studies/manufacturing-machine-optimization"} component={CaseStudyManufacturing} />

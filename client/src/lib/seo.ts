@@ -34,6 +34,10 @@ export const seoMetadata: Record<string, { title: string; description: string }>
     title: 'How We Build eCommerce Sites in 2 Weeks | Smart Commerce | Wellbeeng',
     description: 'Our Smart Commerce build: AI catalogue, custom backend, intelligence dashboard. Full eCommerce live fast.'
   },
+  '/ceo-sherpa': {
+    title: 'CEO Sherpa | Daily AI Decision Brief for D2C and eCommerce Brands | Wellbeeng',
+    description: 'CEO Sherpa reads your commercial and operational data daily and ranks what needs attention, with the exposure, deadline and evidence for each item. Your team decides.'
+  },
   '/intelligence-systems': {
     title: 'Business Intelligence Systems India | Revenue, Operations & Market | Wellbeeng',
     description: 'Complete business intelligence — Revenue, Operations and Market intelligence. Premium, strategic, enterprise-grade.'
