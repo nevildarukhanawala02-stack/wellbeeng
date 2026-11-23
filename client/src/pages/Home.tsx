@@ -95,7 +95,7 @@ export default function Home() {
                 <a className="group cursor-pointer">
                   <div className="bg-blue-800/30 rounded-lg p-8 border-l-4 border-cyan-400 hover:border-cyan-300 transition-all hover:shadow-lg">
                     <div className="inline-block bg-cyan-400/20 text-cyan-400 px-3 py-1 rounded text-sm font-semibold mb-4">Full eCommerce Build</div>
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Shopify Gives You a Store. We Give You a Business.</h3>
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Off-the-Shelf Platforms Give You a Store. We Give You a Business.</h3>
                     <p className="text-gray-300 mb-6">
                       Custom-built eCommerce with AI-generated catalogues, intelligence dashboards, and zero platform lock-in. Launch-ready in under two weeks.
                     </p>

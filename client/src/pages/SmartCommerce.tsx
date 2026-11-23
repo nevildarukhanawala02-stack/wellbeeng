@@ -19,7 +19,7 @@ export default function SmartCommerce() {
         <section className="relative py-20 px-4 bg-gradient-to-b from-slate-900 to-slate-950">
           <div className="container mx-auto px-4 max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Shopify Gives You a Store. <span className="text-cyan-400">We Give You a Business.</span>
+              Off-the-Shelf Platforms Give You a Store. <span className="text-cyan-400">We Give You a Business.</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               Custom-built eCommerce with AI-generated catalogues, real-time intelligence dashboards, and zero platform dependency. Launch-ready in under two weeks.
@@ -60,7 +60,7 @@ export default function SmartCommerce() {
                   <h3 className="text-2xl font-bold text-white">One Screen. Your Entire Business.</h3>
                 </div>
                 <p className="text-gray-300">
-                  Sales, inventory, traffic, add-to-carts and conversions in one unified view — not 12 separate Shopify reports. Your CEO sees what is selling, what is not, and what is running low in 10 seconds.
+                  Sales, inventory, traffic, add-to-carts and conversions in one unified view — not 12 separate platform reports. Your CEO sees what is selling, what is not, and what is running low in 10 seconds.
                 </p>
               </div>
 
@@ -71,7 +71,7 @@ export default function SmartCommerce() {
                   <h3 className="text-2xl font-bold text-white">Your Platform. Your Rules.</h3>
                 </div>
                 <p className="text-gray-300">
-                  Custom backend. No Shopify monthly fees, no app subscriptions, no transaction percentages. Any module — coupons, loyalty programmes, WhatsApp order updates — added directly, without asking permission or paying per feature.
+                  Custom backend. No platform monthly fees, no app subscriptions, no transaction percentages. Any module — coupons, loyalty programmes, WhatsApp order updates — added directly, without asking permission or paying per feature.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function SmartCommerce() {
                 
                 <div>
                   <p className="font-semibold text-cyan-400 mb-2">Full eCommerce Backend:</p>
-                  <p>Product catalogue, product detail pages, cart, checkout, order management, order fulfilment, inventory tracking, and customer accounts. Fully custom. No Shopify.</p>
+                  <p>Product catalogue, product detail pages, cart, checkout, order management, order fulfilment, inventory tracking, and customer accounts. Fully custom. No off-the-shelf platform.</p>
                 </div>
                 
                 <div>
@@ -120,21 +120,21 @@ export default function SmartCommerce() {
         {/* COMPARISON TABLE */}
         <section className="py-20 px-4">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-white mb-12 text-center">Smart Commerce vs Shopify</h2>
+            <h2 className="text-4xl font-bold text-white mb-12 text-center">Smart Commerce vs Off-the-Shelf Platforms</h2>
             
             <div className="max-w-4xl mx-auto overflow-x-auto">
               <table className="w-full text-gray-300">
                 <thead>
                   <tr className="border-b border-cyan-400/20">
                     <th className="text-left py-4 px-4 font-bold text-white">Feature</th>
-                    <th className="text-left py-4 px-4 font-bold text-white">Shopify</th>
+                    <th className="text-left py-4 px-4 font-bold text-white">Off-the-Shelf Platforms</th>
                     <th className="text-left py-4 px-4 font-bold text-cyan-400">Smart Commerce</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-b border-cyan-400/10">
                     <td className="py-4 px-4">Platform cost</td>
-                    <td className="py-4 px-4">Rs 2,000-25,000/month + transaction fees</td>
+                    <td className="py-4 px-4">Monthly subscription + transaction fees</td>
                     <td className="py-4 px-4 text-cyan-400">One-time build. No monthly platform fee.</td>
                   </tr>
                   <tr className="border-b border-cyan-400/10">
@@ -149,12 +149,12 @@ export default function SmartCommerce() {
                   </tr>
                   <tr className="border-b border-cyan-400/10">
                     <td className="py-4 px-4">Custom modules</td>
-                    <td className="py-4 px-4">Find, buy and maintain a Shopify app</td>
+                    <td className="py-4 px-4">Find, buy and maintain a third-party app</td>
                     <td className="py-4 px-4 text-cyan-400">Built to spec. You own it.</td>
                   </tr>
                   <tr className="border-b border-cyan-400/10">
                     <td className="py-4 px-4">Data ownership</td>
-                    <td className="py-4 px-4">Shopify owns your platform</td>
+                    <td className="py-4 px-4">The platform vendor owns your platform</td>
                     <td className="py-4 px-4 text-cyan-400">You own everything. On your infrastructure.</td>
                   </tr>
                   <tr>

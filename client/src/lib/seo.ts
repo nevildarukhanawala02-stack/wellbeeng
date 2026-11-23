@@ -28,7 +28,7 @@ export const seoMetadata: Record<string, { title: string; description: string }>
   },
   '/smart-commerce': {
     title: 'Custom eCommerce Website Development India | AI-Powered | Wellbeeng',
-    description: 'AI-powered eCommerce with AI-generated catalogues and intelligence dashboards. No Shopify. Full ownership. Live in 2 weeks.'
+    description: 'AI-powered eCommerce with AI-generated catalogues and intelligence dashboards. No platform lock-in. Full ownership. Live in 2 weeks.'
   },
   '/smart-commerce/how-it-works': {
     title: 'How We Build eCommerce Sites in 2 Weeks | Smart Commerce | Wellbeeng',
